@@ -1,0 +1,37 @@
+body {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+  background-color: #010101;
+  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica Light', sans-serif;
+  z-index: -1;
+}
+
+.navbar {
+  color: #FCFCFC;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  max-height: fit-content;
+  height: 675px;
+  z-index: 0;
+}
+
+.contact {
+color: #FCFCFC;
+display: flex;
+justify-content: end;
+}
+
+.contact-number {
+margin: 1rem;
+}
+
+.contact-email {
+margin: 1rem;
+}
