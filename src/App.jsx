@@ -38,9 +38,9 @@ function App() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure <b/>dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure <b />
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur.
             <br /> Excepteur sint occaecat cupidatat non proident, sunt in culpa
             qui officia deserunt mollit anim id est laborum."
           </p>
@@ -49,8 +49,12 @@ function App() {
 
       <div>
         <div className="contact">
-          <h2 className="contact-number">07815717407</h2>
-          <h2 className="contact-email">kyletomlinson98@gmail.com</h2>
+          <h2 className="consultation">
+            Book A Free Consulation <br /> call me on 07815717407 <br /> or
+            email at kyletomlinson@gmail.com
+          </h2>
+          {/* <h2 className="contact-number"> call me on 07815717407</h2>
+          <h2 className="contact-email">or email at kyletomlinson98@gmail.com</h2> */}
         </div>
       </div>
     </div>

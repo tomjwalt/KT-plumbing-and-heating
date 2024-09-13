@@ -27,23 +27,30 @@ body {
 
 .contact {
   color: #fcfcfc;
-  display: flex;
-  justify-content: end;
-  align-items: end;
+  display: grid;
+  
+  justify-content: center;
+  align-items: center;
   border: 1px solid red;
 }
 
 .contact-number {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 8rem;
+  justify-content: center;
+  margin-top: 1rem;
   margin-right: 1rem;
 }
 
 .contact-email {
   display: flex;
   justify-content: flex-end;
-  margin-top: 8rem;
+  margin-top: 1rem;
+}
+
+.conslutation {
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .logo {
@@ -58,46 +65,3 @@ body {
   align-items: flex-start;
   border: 1px solid red;
 }
-
-/* @media (min-width: 1279px) {
-  .contact-number {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 8rem;
-    margin-right: 1rem;
-  }
-} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {
-  
-  .contact-number {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 8rem;
-    margin-right: 1rem;
-  }
-
-  .contact-email {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 8rem;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .title-piece-img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-*/
