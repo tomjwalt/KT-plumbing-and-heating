@@ -17,7 +17,7 @@ function App() {
       </div>
       <div className="container">
         <div className="about-me">
-          <h2> About Me </h2>
+          <h2> About Me  Jarrison</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
