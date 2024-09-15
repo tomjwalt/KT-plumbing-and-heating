@@ -19,6 +19,7 @@ body {
 .container {
   display: flex;
   border: 1px solid red;
+
 }
 
 .about {
@@ -28,13 +29,12 @@ body {
 .contact {
   color: #fcfcfc;
   display: grid;
-  
   justify-content: center;
   align-items: center;
   border: 1px solid red;
 }
 
-.contact-number {
+/* .contact-number {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -43,9 +43,9 @@ body {
 
 .contact-email {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 1rem;
-}
+} */
 
 .conslutation {
   display: flex;
@@ -54,8 +54,16 @@ body {
 }
 
 .logo {
-  display: grid;
+  display: flex;
   border: 1px solid red;
+  object-fit: contain;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .title-piece-img {
@@ -63,5 +71,16 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 613px) {
+  .navbar {
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+  .title-piece-img img{
+    object-fit: contain;
+  }
 }
