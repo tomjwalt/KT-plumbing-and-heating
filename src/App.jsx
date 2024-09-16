@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import TitlePieceCropped from "./assets/title-piece-cropped.jpg";
 import Logo from "./assets/logo.jpg";
+import Boiler from "./assets/boiler.png"
 
 function App() {
   return (
@@ -9,7 +10,6 @@ function App() {
       <div className="navbar">
         <div className="title-piece">
           <img
-            classname="title-piece-img"
             src={TitlePieceCropped}
             alt="title-piece-cropped"
           />
@@ -47,14 +47,17 @@ function App() {
         </div>
       </div>
 
+      <div className="information-container">
+        
+      </div>
+
       <div>
-        <div className="contact">
-          <h2 className="consultation">
+        <div className="footer">
+        <img src={Boiler} alt="boiler" />
+          <h2 className="contact">
             Book A Free Consulation <br /> call me on 07815717407 <br /> or
             email at kyletomlinson@gmail.com
           </h2>
-          {/* <h2 className="contact-number"> call me on 07815717407</h2>
-          <h2 className="contact-email">or email at kyletomlinson98@gmail.com</h2> */}
         </div>
       </div>
     </div>
