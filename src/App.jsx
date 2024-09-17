@@ -1,11 +1,33 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./App.css";
 import TitlePieceCropped from "./assets/title-piece-cropped.jpg";
 import Logo from "./assets/logo.jpg";
 import Boiler from "./assets/boiler.png";
 import GasSafe from "./assets/gas-safe.png";
+import emailjs from "@emailjs/browser";
 
 function App() {
+
+// export const ContactUs = () => {
+//   const form = useRef();
+
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     emailjs
+//       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+//         publicKey: "YOUR_PUBLIC_KEY",
+//       })
+//       .then(
+//         () => {
+//           console.log("SUCCESS!");
+//         },
+//         (error) => {
+//           console.log("FAILED...", error.text);
+//         }
+//       );
+//   };
+
   return (
     <div>
       <div className="navbar">
@@ -48,15 +70,20 @@ function App() {
       <div>
         <div className="footer">
           <img src={Boiler} alt="boiler" />
-          <h2 className="contact">
-            Book A Free Consulation <br /> call me on 07815717407 <br /> or
-            email at kyletomlinson@gmail.com
-          </h2>
+          {/* <form ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Message</label>
+            <textarea name="message" />
+            <input type="submit" value="Send" />
+          </form> */}
           <img className="gas-safe" src={GasSafe} alt="gas safe" />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;
