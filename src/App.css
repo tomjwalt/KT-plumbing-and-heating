@@ -21,15 +21,10 @@ body {
   border: 1px solid red;
 }
 
-.about {
-  color: #fcfcfc;
-}
-
 .footer {
-  color: #fcfcfc;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   border: 1px solid red;
 }
 
@@ -37,14 +32,18 @@ body {
   border: 1px solid red;
 }
 
+.gas-safe {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .contact {
   width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  text-align: center;
+  max-height: 100%;
   border: 1px solid red;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {

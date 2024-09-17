@@ -2,21 +2,19 @@ import { useState } from "react";
 import "./App.css";
 import TitlePieceCropped from "./assets/title-piece-cropped.jpg";
 import Logo from "./assets/logo.jpg";
-import Boiler from "./assets/boiler.png"
+import Boiler from "./assets/boiler.png";
+import GasSafe from "./assets/gas-safe.png";
 
 function App() {
   return (
     <div>
       <div className="navbar">
         <div className="title-piece">
-          <img
-            src={TitlePieceCropped}
-            alt="title-piece-cropped"
-          />
+          <img src={TitlePieceCropped} alt="title-piece-cropped" />
         </div>
       </div>
       <div className="container">
-        <div className="about-me">
+        <div>
           <h2> About Me </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -47,17 +45,14 @@ function App() {
         </div>
       </div>
 
-      <div className="information-container">
-        
-      </div>
-
       <div>
         <div className="footer">
-        <img src={Boiler} alt="boiler" />
+          <img src={Boiler} alt="boiler" />
           <h2 className="contact">
             Book A Free Consulation <br /> call me on 07815717407 <br /> or
             email at kyletomlinson@gmail.com
           </h2>
+          <img className="gas-safe" src={GasSafe} alt="gas safe" />
         </div>
       </div>
     </div>
