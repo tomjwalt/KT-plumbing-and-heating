@@ -7,27 +7,26 @@ import GasSafe from "./assets/gas-safe.png";
 import emailjs from "@emailjs/browser";
 
 function App() {
+  const ContactUs = () => {
+    const form = useRef();
 
-// export const ContactUs = () => {
-//   const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
 
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-//         publicKey: "YOUR_PUBLIC_KEY",
-//       })
-//       .then(
-//         () => {
-//           console.log("SUCCESS!");
-//         },
-//         (error) => {
-//           console.log("FAILED...", error.text);
-//         }
-//       );
-//   };
-
+      emailjs
+        .sendForm("service_nsmmk8d", "template_bb1af6q", form.current, {
+          publicKey: "_LdYqIJsn_H12OJlA",
+        })
+        .then(
+          () => {
+            window.alert("SUCCESS!");
+          },
+          (error) => {
+            window.alert("FAILED...", error.text);
+          }
+        );
+    };
+  };
   return (
     <div>
       <div className="navbar">
@@ -70,20 +69,23 @@ function App() {
       <div>
         <div className="footer">
           <img src={Boiler} alt="boiler" />
-          {/* <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-          </form> */}
+          {/* <div className="contact-form">
+            <h1 className="heading">get in touch</h1>
+            <form ref={form} onSubmit={sendEmail}>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
+            </form>
+          </div> */}
           <img className="gas-safe" src={GasSafe} alt="gas safe" />
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default App;
