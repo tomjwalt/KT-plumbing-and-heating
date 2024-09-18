@@ -7,7 +7,7 @@ import GasSafe from "./assets/gas-safe.png";
 import emailjs from "@emailjs/browser";
 
 function App() {
-  const ContactUs = () => {
+  const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -19,14 +19,26 @@ function App() {
         })
         .then(
           () => {
-            window.alert("SUCCESS!");
+            console.log("SUCCESS!");
           },
           (error) => {
-            window.alert("FAILED...", error.text);
+            console.log("FAILED...", error.text);
           }
         );
     };
+    return (
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
+    );
   };
+
   return (
     <div>
       <div className="navbar">
@@ -69,18 +81,10 @@ function App() {
       <div>
         <div className="footer">
           <img src={Boiler} alt="boiler" />
-          {/* <div className="contact-form">
-            <h1 className="heading">get in touch</h1>
-            <form ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
-              <input type="text" name="user_name" />
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <label>Message</label>
-              <textarea name="message" />
-              <input type="submit" value="Send" />
-            </form>
-          </div> */}
+          <div className="contact-form">
+            <h2 className="primary-heading">get in touch</h2>
+            <Contact className="contact-page-wrapper" />
+          </div>
           <img className="gas-safe" src={GasSafe} alt="gas safe" />
         </div>
       </div>
