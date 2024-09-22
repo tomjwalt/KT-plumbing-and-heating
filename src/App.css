@@ -16,6 +16,11 @@ body {
   border: 1px solid red;
 }
 
+.nav-info {
+  border: 1px solid red;
+}
+
+
 .container {
   display: flex;
   border: 1px solid red;
@@ -24,7 +29,6 @@ body {
 .footer {
   display: flex;
   grid-column: 1 1;
-  justify-content: space-between;
   position: relative;
   border: 1px solid red;
 }
@@ -40,6 +44,9 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: -1;
+  background-image: "./assets/gas-safe.png";
+
 }
 
 .logo {
@@ -137,10 +144,33 @@ input[type="submit"] {
   
 }
 
-@media (max-width: 613px) {
+@media (max-width: 1059px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-info img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+/* @media (max-width: 620px) {
+  .nav-info img {
+    max-width: 50%;
+  }
+} */
+
+@media (max-width: 615px) {
   .title-piece {
     width: 100%;
     height: auto;
+    color: #f85906;
   }
 
   .title-piece img {

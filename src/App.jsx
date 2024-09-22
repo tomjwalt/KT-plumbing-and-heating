@@ -5,6 +5,9 @@ import Logo from "./assets/logo.jpg";
 import Boiler from "./assets/boiler.png";
 import GasSafe from "./assets/gas-safe.png";
 import emailjs from "@emailjs/browser";
+import Email from "./assets/email.png";
+import MobileNumber from "./assets/mobile-number.png";
+import EmailNumberPiece from "./assets/email-number-asset.png"
 
 function App() {
   const Contact = () => {
@@ -19,10 +22,10 @@ function App() {
         })
         .then(
           () => {
-            console.log("SUCCESS!");
+            console.log("mesage sent");
           },
           (error) => {
-            console.log("FAILED...", error.text);
+            console.log("message failed to send", error.text);
           }
         );
     };
@@ -44,6 +47,9 @@ function App() {
       <div className="navbar">
         <div className="title-piece">
           <img src={TitlePieceCropped} alt="title-piece-cropped" />
+        </div>
+        <div className="nav-info">
+          <img src={EmailNumberPiece} alt="email and number img" />
         </div>
       </div>
       <div className="container">
@@ -80,9 +86,9 @@ function App() {
 
       <div>
         <div className="footer">
-          <img src={Boiler} alt="boiler" />
+          <img className="boiler-asset" src={Boiler} alt="boiler" />
           <div className="contact-form">
-            <h2 className="primary-heading">get in touch</h2>
+            <h2 className="primary-heading">Get in touch</h2>
             <Contact className="contact-page-wrapper" />
           </div>
           <img className="gas-safe" src={GasSafe} alt="gas safe" />
