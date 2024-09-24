@@ -54,7 +54,7 @@ function App() {
       </div>
       <div className="container">
         <div>
-          <h2> About Me </h2>
+          <h1 className="primary-heading"> About Me </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
@@ -70,7 +70,7 @@ function App() {
           <img src={Logo} alt="logo" />
         </div>
         <div className="my-services">
-          <h2>My services</h2>
+          <h1 className="primary-heading">My services</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
@@ -88,7 +88,7 @@ function App() {
         <div className="footer">
           <img className="boiler-asset" src={Boiler} alt="boiler" />
           <div className="contact-form">
-            <h2 className="primary-heading">Get in touch</h2>
+            <h1 className="primary-heading">Get in touch</h1>
             <Contact className="contact-page-wrapper" />
           </div>
           <img className="gas-safe" src={GasSafe} alt="gas safe" />
